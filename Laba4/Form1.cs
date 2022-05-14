@@ -1,4 +1,7 @@
-﻿using System;
+﻿// This is a personal academic project. Dear PVS-Studio, please check it.
+
+// PVS-Studio Static Code Analyzer for C, C++, C#, and Java: https://pvs-studio.com
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +23,8 @@ namespace Laba4
         int y, k;
         int a;
         int x;
+      
+       
       
         int b;
 
@@ -61,7 +66,7 @@ namespace Laba4
         {
             if (textBox1.Text == " ") return;
 
-
+          
             originaltext = null;
             shifrtext = null;
             decodtext = null;
@@ -114,11 +119,17 @@ namespace Laba4
                 }
                 textBox3.Text = shifrtext;
             }
-
+            if (shifrtext == null)
+            {
+                return;
+            }
             string[] string1 = shifrtext.Split(' ');
 
             if (string1.Length > 0)
             {
+
+
+
 
                 for (int i = 0; i < string1.Length - 1; i += 2)
                 {
@@ -178,8 +189,8 @@ List < BigInteger > number = new List<BigInteger>();
 
 BigInteger integer = ((BigInteger.Pow(g_, 1)) % p);
     number.Add(integer);
-  
- for (int i = 2; i != p; i++)
+            //integer
+            for (int i = 2; i != p; i++)
      {
        integer = BigInteger.Pow(g_, i) % p;
       for (int j = 0; j != i - 1; j++)
@@ -203,7 +214,7 @@ BigInteger integer = ((BigInteger.Pow(g_, 1)) % p);
 g = g_;
             flag = true;
     return flag;
-   }
+        }  //  b = b % m;
         int powmod(int a, int x, int m)
         {
 
@@ -218,6 +229,7 @@ g = g_;
                     result = result % m;
                 }
                 b = b * b;
+
                 b = b % m;
                 x = x >> 1;
 
@@ -228,7 +240,7 @@ g = g_;
         int Proizved(int a, int b, int n)
         {
 
-            int sum = 0;
+            int sum =0;
             for (int i = 0; i < b; i++)
             {
                 sum += a;
