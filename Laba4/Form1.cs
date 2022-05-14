@@ -215,7 +215,7 @@ g = g_;
             flag = true;
     return flag;
         }  //  b = b % m;
-        int powmod(int a, int x, int m, int z)
+        int powmod(int a, int x, int m)
         {
 
             int b, result = 1;
