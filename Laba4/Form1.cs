@@ -214,7 +214,7 @@ BigInteger integer = ((BigInteger.Pow(g_, 1)) % p);
 g = g_;
             flag = true;
     return flag;
-   }
+        }  //  b = b % m;
         int powmod(int a, int x, int m, int z)
         {
 
@@ -229,8 +229,8 @@ g = g_;
                     result = result % m;
                 }
                 b = b * b;
-              //  b = b % m;
-                b = b;
+
+                b = b % m;
                 x = x >> 1;
 
             }
