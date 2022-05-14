@@ -119,10 +119,10 @@ namespace Laba4
                 }
                 textBox3.Text = shifrtext;
             }
-            if (shifrtext == null)
-            {
-                return;
-            }
+        if (shifrtext == null)
+{
+return;
+}
             string[] string1 = shifrtext.Split(' ');
 
             if (string1.Length > 0)
