@@ -119,10 +119,7 @@ namespace Laba4
                 }
                 textBox3.Text = shifrtext;
             }
-        if (shifrtext == null)
-{
-return;
-}
+ 
             string[] string1 = shifrtext.Split(' ');
 
             if (string1.Length > 0)
@@ -132,7 +129,7 @@ return;
                 
 
 
-                for (int i = 0; i < string1.Length - 1; i =+ 2)
+                for (int i = 0; i < string1.Length - 1; i += 2)
                 {
                     a = Convert.ToInt32(string1[i]);
                     b = Convert.ToInt32(string1[i + 1]);
