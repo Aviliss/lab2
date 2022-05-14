@@ -195,7 +195,7 @@ BigInteger integer = ((BigInteger.Pow(g_, 1)) % p);
        integer = BigInteger.Pow(g_, i) % p;
       for (int j = 0; j != i - 1; j++)
             {
-            if (number[j] == number[j])
+            if (number[j] == integer)
                {
               g_--;
                number.Clear();
